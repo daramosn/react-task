@@ -1,0 +1,38 @@
+.course {
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    border: 1px solid rgb(225, 104, 104);
+    padding: 0.5rem 1.5rem;
+    gap: 2rem;
+
+    &__description-title {
+        margin: 0;
+    }
+    &__description-content {
+        text-align: justify;
+    }
+
+    &__details {
+        min-width: 0;
+        display: grid;
+        gap: 0.5rem;
+        &-authors {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-bottom: 0;
+        }
+
+        &-item {
+            margin: 0;
+        }
+    }
+
+    &__button {
+        margin: auto;
+    }
+
+    &--bold {
+        font-weight: 500;
+    }
+}

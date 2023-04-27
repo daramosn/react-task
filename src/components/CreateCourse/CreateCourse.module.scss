@@ -1,0 +1,47 @@
+.new-course {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+
+    &__actions {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        align-items: end;
+
+        &-textarea {
+            grid-column: 1/3;
+            resize: none;
+        }
+    }
+
+    &__button {
+        align-self: center;
+    }
+
+    &__details {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        border: 1px solid olive;
+        padding: 1rem;
+
+        &--one-column {
+            display: grid;
+            gap: 0.5rem;
+        }
+    }
+
+    &__list-item {
+        margin-bottom: 0.5rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &--title {
+        text-align: center;
+    }
+    &--no-padding {
+        padding: 0;
+    }
+}
